@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+<script src="https://use.fontawesome.com/5e792b0840.js"></script>
+<link rel="stylesheet" href="creative.css" > 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
+<title>ForeGround</title>
+
+<body>
+<header>
+<div class="topnav">
+  <a href="index.html">ForeGround</a>
+  <div class="search-container">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+	</div>
+</div>
+</header>
+
+<div class="sidebar">
+	<ul>
+		<i class="fa fa-home" aria-hidden="true"></i>
+		<li><a href="index.html">HOME</a></li>
+		
+
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+		<li onclick="on()"><a>POST</a></li>
+		
+	<i class="fa fa-id-card-o" aria-hidden="true"></i>
+		<li><a href="user.html">PROFILE</a></li>	
+	<i class="fa fa-heart-o" aria-hidden="true"></i>
+		<li><a href="favorites.html">FAVORITES</a></li>
+		
+	<i class="fa fa-plus-square" aria-hidden="true"></i>
+		<li><a href="help.html">HELP</a></li>
+		<li><a>LOGOUT</a></li>
+	
+	</ul>
+</div>
+<div class="rightsidebar">
+	<ul>
+		<li><a></a></li>
+		<li
+	</ul>
+</div>
+<div class="body">
+<div class="newsfeed">
+	<div class="newsHeader">
+	<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+	Nate Smith 
+	<div class="rank"> 
+	Rank: 5  
+	<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+	<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+	</div>
+	</div>
+	<div class = "newsBody">
+	Hello! and Welcome to ForeGround. This is a simple social media website that I 
+	built. Right now its just the frame work but hopefully in the future it will be
+	able to become something much better! Thanks for checking out the site and have a 
+	look around! If you want to give feedback feel free to go to the help section and 
+	leave a comment if you so desire. Thanks again! and have a great day. 
+	</div>
+	<div class = "newsFooter">
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+	<input type="text" placeholder="Comment.." name="search">
+	</div>
+</div>
+<div class="newsfeed">
+	<div class="newsHeader">
+	<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+	John Doe Smith 
+	<div class="rank"> 
+	Rank: 4  
+	<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+	<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+	</div>
+	</div>
+	<div class = "newsBody">
+	<img src="boat.JPG" alt = "food" width="100%" height="100%">
+	The other day I went to see this boat. It was so cool to get to go in the inside
+	it was pretty fun cause I got to hang with the family as well #oldboat #blessed
+	#family #trip #like4like #hashtag
+	</div>
+	<div class = "newsFooter">
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+	<input type="text" placeholder="Comment.." name="search">
+	</div>
+</div>
+<div class="newsfeed">
+	<div class="newsHeader">
+	<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+	Felice An 
+	<div class="rank"> 
+	Rank: 3  
+	<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+	<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+	</div>
+	</div>
+	<div class = "newsBody">
+		<img src="sashimi.JPG" alt = "food" width="100%" height="100%">
+		Some delicous sea food I had the other day! You guys should all try this!
+	</div>
+	<div class = "newsFooter">
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+	<input type="text" placeholder="Comment.." name="search">
+	</div>
+</div>
+
+<div class="newsfeed">
+	<div class="newsHeader">
+	<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+	Nate Smith 
+	<div class="rank"> 
+	Rank: 2  
+	<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+	<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+	</div>
+	</div>
+	<div class = "newsBody">
+	So this is my first post ever! Woohoo! Im really hoping that all of the stuff works 
+and that everything ends up lining up properly! 	
+	</div>
+	<div class = "newsFooter">
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+	<input type="text" placeholder="Comment.." name="search">
+	</div>
+</div>
+<div class="newsfeed">
+	<div class="newsHeader">
+	<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+	Jane Doe
+	<div class="rank"> 
+	Rank: 0  
+	<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+	<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+	</div>
+	</div>
+	<div class = "newsBody">
+	<img src="scenery.JPG" alt = "scenery" width="100%" height="100%">
+	#nofilter #followme #likeme #like4like #toogoodforafilter #iloveusingreallylonghashtagsthatnoonecanread
+	</div>
+	<div class = "newsFooter">
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+	<input type="text" placeholder="Comment.." name="search">
+	</div>
+</div>
+</div>
+<div id="overlay" onclick="off()">
+	<div class="postFeed">
+			<div class="newsHeader">
+				<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+				Nate Smith 
+			</div>
+		<div class = "newsFooter">
+			<i class="fa fa-commenting-o" aria-hidden="true"></i>
+			<input type="text" placeholder="Your Post.." name="search"  >
+		</div>
+	</div>
+</div>
+
+<footer>
+	<a href="https://github.com/NathanaelSmith/CreativeProject1">GitHub</a>
+</footer>
+
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+</body>
+
+</html>

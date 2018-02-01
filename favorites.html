@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+<script src="https://use.fontawesome.com/5e792b0840.js"></script>
+<link rel="stylesheet" href="creative.css" > 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
+<title>ForeGround</title>
+
+<body>
+<header>
+<div class="topnav">
+  <a href="index.html">ForeGround</a>
+  <div class="search-container">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+	</div>
+</div>
+</header>
+
+<div class="sidebar">
+	<ul>
+		<i class="fa fa-home" aria-hidden="true"></i>
+		<li><a href="index.html">HOME</a></li>
+		
+
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+		<li onclick="on()"><a>POST</a></li>
+		
+	<i class="fa fa-id-card-o" aria-hidden="true"></i>
+		<li><a href="user.html">PROFILE</a></li>	
+	<i class="fa fa-heart-o" aria-hidden="true"></i>
+		<li><a href="favorites.html">FAVORITES</a></li>
+		
+	
+		
+		
+	<i class="fa fa-plus-square" aria-hidden="true"></i>
+		<li><a href="help.html">HELP</a></li>
+		<li><a>LOGOUT</a></li>
+	
+	</ul>
+</div>
+<div class="rightsidebar">
+	<ul>
+		<li><a></a></li>
+		<li
+	</ul>
+</div>
+
+
+<div class="body">
+<div class ="wrapper">
+	<div class = "one"><img src="marvel.jpeg" alt ="photo" width="55%" height="60%">
+	</div>
+	<div class = "two"><img src="byu.jpg" alt ="photo" width="55%" height="60%">
+	</div>
+	<div class = "three"><img src="japan.png" alt ="photo" width="55%" height="60%">
+	</div>
+	<div class = "seven"><img src="games.png" alt ="photo" width="55%" height="60%">
+	</div>
+
+	<div class = "six"><img src="amazon.jpg" alt ="photo" width="55%" height="60%">
+	</div>
+	<div class = "four"><img src="tasty.jpg" alt ="photo" width="55%" height="60%">
+	</div>
+	<div class = "nine"><img src="espn.jpg" alt ="photo" width="55%" height="60%">
+	</div>
+	<div class = "eight"><img src="apple.png" alt ="photo" width="55%" height="60%">
+	</div>
+	
+	<div class = "five">YOUR FAVORITES</div>
+	
+</div>
+</div>
+
+
+</div>
+<div id="overlay" onclick="off()">
+	<div class="postFeed">
+			<div class="newsHeader">
+				<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+				Nate Smith 
+			</div>
+		<div class = "newsFooter">
+			<i class="fa fa-commenting-o" aria-hidden="true"></i>
+			<input type="text" placeholder="Your Post.." name="search"  >
+		</div>
+	</div>
+</div>
+
+<footer>
+	<a href="https://github.com/NathanaelSmith/CreativeProject1">GitHub</a>
+</footer>
+
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+
+</body>
+
+</html>
