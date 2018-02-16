@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Basic" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 <title>ForeGround</title>
 
 <body>
@@ -12,8 +14,8 @@
 <div class="topnav">
   <a href="index.html">ForeGround</a>
   <div class="search-container">
-  <input type="text" placeholder="Search.." name="search">
-  <button type="submit"><i class="fa fa-search"></i></button>
+  <input id = "searchInput" type="text" placeholder="Search.." name="search">
+  <button id = "searchSubmit" type="submit"><i class="fa fa-search"></i></button>
 	</div>
 </div>
 </header>
@@ -45,6 +47,27 @@
 	</ul>
 </div>
 <div class="body">
+<div class="newsfeed">
+	<div class="newsHeader">
+	<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
+	Nate Smith 
+	<div class="rank"> 
+	Rank: 5  
+	<i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+	<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+	</div>
+	</div>
+	<div class = "newsBody">
+	Hello Again! My Web Page has been updated for the new stuff I have added. 
+	You will notice a new look for color as well as the search bar in the top corner.
+	You can now type in anything to get a list of news and various pages from around 
+	the web. Try it out and see what happens! Thanks for checking this page out!
+	</div>
+	<div class = "newsFooter">
+	<i class="fa fa-commenting-o" aria-hidden="true"></i>
+	<input type="text" placeholder="Comment.." name="search">
+	</div>
+</div>
 <div class="newsfeed">
 	<div class="newsHeader">
 	<img src="profilephoto.jpg" alt ="Profile photo" width="20" height="20">
@@ -147,6 +170,8 @@ and that everything ends up lining up properly!
 	</div>
 </div>
 </div>
+
+
 <div id="overlay" onclick="off()">
 	<div class="postFeed">
 			<div class="newsHeader">
@@ -160,18 +185,13 @@ and that everything ends up lining up properly!
 	</div>
 </div>
 
+<div id="openMessage" onclick="offit()">
+  <div id="text">Check out the newly enable Search Bar to see posts from around the web</div>
+</div>
+
 <footer>
 	<a href="https://github.com/NathanaelSmith/CreativeProject1">GitHub</a>
 </footer>
-
-<script>
-function on() {
-    document.getElementById("overlay").style.display = "block";
-}
-function off() {
-    document.getElementById("overlay").style.display = "none";
-}
-</script>
 
 
 </body>

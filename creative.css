@@ -2,13 +2,18 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
+.results{
+	color:black;
+}
+
 .topnav {
 	overflow: hidden;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 50px;
-	background-color: MediumSeaGreen ;
+	background-color: DarkOrange  ;
 	border-bottom: 2px solid white;
 }
 
@@ -48,7 +53,7 @@ body{
 }
 
 .topnav .search-container button:hover {
-	background: MediumSeaGreen ;
+	background: DarkOrange  ;
 }
 
 
@@ -57,10 +62,11 @@ body{
 	padding: 0px;
 	margin-top: 8px;
 	margin-right: 16px;
-	background: MediumSeaGreen ;
+	background: DarkOrange  ;
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
+	color: white;
 }
 
 .sidebar ul {
@@ -68,7 +74,7 @@ body{
     margin: 0;
 	padding: 0;
     width: 17%;
-    background-color: MediumSeaGreen ;
+    background-color: DarkOrange  ;
     position: fixed;
     height: 92%;
 
@@ -93,7 +99,7 @@ body{
 	padding: 0px;
 	margin-top: 8px;
 	margin-right: 16px;
-	background: MediumSeaGreen ;
+	background: DarkOrange  ;
 	font-size: 17px;
 	border: none;
 	cursor: pointer;
@@ -104,7 +110,7 @@ body{
     margin: 0;
 	padding: 0;
     width: 17%;
-    background-color: MediumSeaGreen ;
+    background-color: DarkOrange  ;
     position: fixed;
     height: 92%;
 
@@ -137,7 +143,7 @@ body{
 	margin-top: 15px;
     margin-left: 26%;
     margin-right: auto;
-	border: solid 2px MediumSeaGreen  ;
+	border: solid 2px DarkOrange   ;
 	width: 47%;
     height: auto;
 	border-radius: 5px;
@@ -156,12 +162,13 @@ body{
 
 .newsHeader{
 	font-size: 18px;
-	border-bottom: 1px solid MediumSeaGreen  ;
+	border-bottom: 1px solid DarkOrange   ;
 	padding: 10px;
 	font-family: 'Basic', sans-serif;
 	background-color: GhostWhite   ;
 	cursor: pointer;
 }
+
 
 .newsHeader .rank{
 	float: right;
@@ -181,11 +188,15 @@ body{
 
 .newsFooter{
 	font-size: 18px;
-	border-top: 1px solid MediumSeaGreen  ;
+	border-top: 1px solid DarkOrange   ;
 	padding: 10px;
 	font-family: 'Basic', sans-serif;
-	
+	text-align:center;
 
+}
+.newsFooter a{
+	text-decoration: none;
+	color: black;
 }
 
 .newsFooter i{
@@ -196,7 +207,7 @@ body{
 .newsFooter input[type=text] {
 	padding: 6px;
 	font-size: 17px;
-	border: 1px solid MediumSeaGreen ;
+	border: 1px solid DarkOrange  ;
 	border-radius: 10px;
 	font-family: 'Basic', sans-serif;
 	background-color: GhostWhite ;
@@ -210,7 +221,7 @@ body{
 	margin-top: 20%;
     margin-left: 29%;
     margin-right: auto;
-	border: solid 2px MediumSeaGreen  ;
+	border: solid 2px DarkOrange   ;
 	width: 42%;
     height: auto;
 	border-radius: 5px;
@@ -230,6 +241,26 @@ body{
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+}
+
+#openMessage {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+	color: black;
+	font-family: 'Basic', sans-serif;
+	font-size: 14px;
+    z-index: 2;
+    cursor: pointer;
+}
+#openMessage div{
+	text-align: center;
 }
 
 #text{
@@ -278,7 +309,7 @@ footer a{
 
 .bodyhelp input[type=submit] {
     width: 60%;
-    background-color: MediumSeaGreen;
+    background-color: DarkOrange ;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -365,5 +396,34 @@ footer a{
   grid-column: 3;
   grid-row: 3;
   cursor: pointer;
+}
+
+menubar ul{
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+	width: 50%;
+	background-color: orange;
+	border: solid 2px darkorange;
+	border-radius: 10px;
+}
+
+menubar li{
+	float: left;
+	width: 25%;
+}
+menubar li a{
+	display: block;
+	color: black ;
+	text-align: center;
+	padding: 14px 16px;
+	font-family: 'Righteous', cursive;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+menubar li .active {
+	background-color: white;
 }
 
